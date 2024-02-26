@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Donaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fs-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+             <img src="../img/logo.png" alt="" class="logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/adopta ahora.html">adoptar ahora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/Galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/Contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/donaciones.html">Quiero donar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main>
+<section>
+ <h1 class="donaciones-titulo">Contribuye a la causa</h1>
+<p class="donaciones-texto" >Tu generosa donación nos ayuda a seguir brindando cuidado y apoyo a los animales necesitados. Cada contribución cuenta y marca la diferencia en la vida de un amigo peludo.</p>
+
+<div>
+    <div>
+        <img  class="donaciones-imagen" src="../img/adoptar-mascota_114360-2019.jpg" alt="">
+    </div>
+
+<div>
+    <form>
+        <label for="amount" class="cantidad" >selecciona una cantidad</label>
+        <select name="amount" id="amount" class="donaciones-cantidad">
+            <option value="disabled selected" required >selecciona una cantidad</option>
+            <option value="100">$100</option>
+            <option value="500">$500</option>
+            <option value="1000">$1000</option>
+            <option value="5000">$5000</option>
+        </select>
+    </form>
+</div>
+
+<div>
+    <label for="cardnumber" class="cardnumber">Numero de Tarjeta</label>
+    <input type="number" class="donaciones-tarjeta" required></div>
+</div>
+
+<div>
+    <label for="cardholder" class="cardholder">Titular de la Tarjeta</label>
+    <input type="text" class="donaciones-titular" required>
+</div>
+
+<div>
+    <label for="expiration" class="tarjeta-vencimiento">Fecha de Vencimiento</label>
+    <input type="number" class="vencimiento-fecha" id="expiration" required>
+</div>
+<div>
+    <label for="cvv" class="cvv">CVV</label>
+    <input type="number" class="input-cvv" id="cvv" required>
+</div>
+<button type="submit" class="donaciones-boton" > Donar Ahora</button>
+
+
+
+</section>
+
+
+</main>
+
+<!-- seccion-footer-->
+<footer class="footer" >
+
+    <div>
+        <h3 class="footer-title">Enlaces</h3>
+         <ul><a class="link-footer" href="../Pages/adopta ahora.html">adoptar mascota</a></ul>
+         <ul><a class="link-footer" href="../Pages/Galeria.html">Galeria</a></ul>
+         <ul><a class="link-footer" href="../Pages/Contactanos.html">Sobre nosotros</a></ul>
+        </div>
+    
+    <div>
+        <h3 class="footer-title">Donar</h3>
+         <ul><a class="link-footer" href="../Pages/donaciones.html">Como donar</a></ul>
+        <ul><a class="link-footer" href="../Pages/donaciones.html">Programas de donacion</a></ul>
+        </div>
+    
+    <div>
+        <h3 class="footer-title">Suscribete</h3>
+         <p class="footer-p" >recibe noticias y actualizaciones por correo electronico</p>
+         <input class="footer-input" type="email" name="" id="" placeholder="ingresa tu correo electronico">
+         <button class="footer-button" type="submit">suscribirse</button>
+        </div>
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
