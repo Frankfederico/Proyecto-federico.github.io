@@ -1,0 +1,71 @@
+    /*Tercera pagina*/
+    
+    .title-gallery {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: $color-primary;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        margin-top: 10rem;
+    }
+    .gallery {
+        background-color: #fff7f0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    .gallery__image:hover {
+        transform: scale(1.15);
+    }
+    .gallery__image {
+        max-height: 28rem;
+        min-height: 28rem;
+        display: block;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        transition: transform 400ms ease-out;
+    }
+    img, svg {
+        vertical-align: middle;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .page-link.active {
+        background-color: $color-secundary;
+        color: white;
+        border-color: #51bedb;
+    }
+    .page-link {
+        margin: 0 5px;
+        padding: 10px 15px;
+        color: $color-primary;
+        background-color: transparent;
+        text-decoration: none;
+        border: 2px solid #51bedb;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    @media (min-width: 1200px)
+{.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;}}
+
+    @media (min-width: 992px)
+    {.container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }}
+
+    @media (min-width: 768px)
+{.container, .container-md, .container-sm {
+    max-width: 720px;
+}}
+
+@media (min-width: 576px)
+{.container, .container-sm {
+    max-width: 540px;
+}}

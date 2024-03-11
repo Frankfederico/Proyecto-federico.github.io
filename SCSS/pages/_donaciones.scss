@@ -1,0 +1,83 @@
+
+    /*quinta pagina*/
+    
+    .donaciones-titulo {color: #038803;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-style:oblique;
+        font-weight: bold;
+        text-align: center;
+    background-color: #fff;}
+    
+    .donaciones-texto{font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .donaciones-imagen{    width: 40%;
+        height: 40%; }
+    
+    .donaciones-boton{background-color:$color-secundary;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; 
+    border-radius: 5px;
+    padding: 10px;}
+    
+    
+    .cantidad {font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .cardnumber{font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .cardholder{font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .tarjeta-vencimiento{font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .cvv{font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    
+    .donaciones-cantidad{width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 10px;}
+    
+    .donaciones-tarjeta{width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 10px;}
+    
+    
+    
+    .donaciones-titular{width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 10px;}
+    
+    .vencimiento-fecha{width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 10px;}
+    
+    .input-cvv{width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 10px;} 

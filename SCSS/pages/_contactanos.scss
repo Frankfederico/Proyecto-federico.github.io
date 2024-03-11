@@ -1,0 +1,50 @@
+    /*Cuarta pagina*/
+    
+    .titulo-contacto{color: #038803;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-style:oblique;
+        font-weight: bold;
+        text-align: center;}
+    
+    .contacto-subtitulo{color: #038803;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-style:oblique;
+        font-weight: bold;
+        text-align: left;}
+    
+    .contacto-text{ font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .contacto-info{ font-size: 1rem;
+        color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .mensaje-titulo{color: #038803;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-style:oblique;
+        font-weight: bold;
+        text-align: left;}
+    
+    
+    .input-mensaje{width: 50%;
+        flex-grow: 1;
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        font-size: 16px;    
+        margin: 10px;
+        border: 1px solid #ccc
+    }
+    
+    .enviar-mensaje{background-color:$color-secundary;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; 
+    border-radius: 5px;
+    padding: 10px;}
+    
+    
+    

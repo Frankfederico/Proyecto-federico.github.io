@@ -1,0 +1,299 @@
+    /*Primera pagina*/
+    
+
+    .carousel-inner .carousel-item img {
+        min-height: 20rem;
+        -o-object-fit: cover;
+        object-fit: cover;}
+    
+    .dblock{display: block !important;}
+    
+    
+    @media (max-width: 1317px){
+    .carousel-inner .carousel-item .title-highlight {
+        font-size: 3rem;
+        color: $color-primary;
+        margin-bottom: 1rem;
+    } }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel-item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: transform .6s ease-in-out; }
+    
+        .carousel-item.active {
+            display: block;
+        }
+    
+    .text-end{text-align: right !important;}
+    
+        .carousel-inner .carousel-item .title-highlight-principal {
+                font-size: 4rem;
+                color: $color-primary;
+                text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
+                font-weight: 900;
+                text-align: center;
+            }
+    
+            .carousel-inner .carousel-item .title-highlight {
+                font-size: 4rem;
+                color:$color-primary;
+                font-weight: 900;
+                font-family: "Oswald", sans-serif; }
+    
+            .title-highlight-2{font-size: 3rem;
+                color: $color-primary;
+                font-weight: 900;
+                font-family: "Oswald", sans-serif;}
+    
+                .carousel-inner .carousel-item .text-carousel {
+                    position: absolute;
+                    padding: 3rem;
+                    left: 35%;
+                    top: 25%;
+                }
+    
+            .carousel-inner .carousel-item .subtitle {
+                font-size: 1.2rem;
+                color: black;
+            }
+    
+            @media (max-width: 1317px)
+    {.carousel-inner .carousel-item .title-highlight-principal {
+        font-size: 2.5rem;}
+    }
+    
+    @media (min-width: 768px)
+    {.d-md-block {
+        display: block!important;
+    } }
+    
+    .text-end {
+        text-align: right!important;
+    }
+    
+    .carrusel-caption {text-align: center;}
+    
+    /*carrusel-adopciones*/
+    .adop-class-title{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    text-align: center;} 
+    
+    .card{ justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        border-radius: 10px;
+        border: 0.1px solid #ccc ;
+        height: 400px;
+        padding: 20px;
+        width: 300px;
+        align-items: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    align-content: center;}
+    
+    .cards__list {
+        display: flex;
+        flex-wrap: wrap;
+    padding: 5%;
+    }
+    
+    .card-carrusel-img{
+            max-width: 15rem;
+            min-height: 24rem;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 35% 2%;
+            margin-bottom: 20px;
+            border: 3px double$color-primary;
+        vertical-align: middle;
+        }
+        .testimonials__item{display: inline-block;
+        vertical-align: middle;}
+        .testimonials{text-align: center;}
+    
+    .carousel-item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: transform .6s ease-in-out;
+    }
+    
+    .testimonials__item__author{font-weight: bold;
+    color:$color-primary;
+    font-size: 1.4rem;}
+    
+    /*seccion-grid*/
+    
+    [data-aos^=zoom][data-aos^=zoom].aos-animate {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+    [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+        transition-timing-function: ease;
+    }
+    [data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+        transition-duration: .4s;
+    }
+    [data-aos^=zoom][data-aos^=zoom] {
+        opacity: 0;
+    }
+    
+    .info{
+        padding: 0;
+        display: grid !important ;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "a a a a"
+            "b b c c"
+            "b b d d";
+        width: 100%;
+        align-items: center;
+    }
+    
+    .info .box {
+        min-height: 15rem;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+    }
+    .info .box h1 {
+        font-size: 2rem;
+        display: flex;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 10px;
+    }
+    
+    
+    .info .box1 {
+        grid-area: a;
+        background-position: center 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100ed…);
+    }
+    
+    .info .box2 {
+        grid-area: b;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b6…);
+        height: 100%;
+    }
+    
+    .info .box3 {
+        grid-area: c;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c212…);
+    }
+    
+    .info .box4 {
+        grid-area: d;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e…);
+    }
+    
+    
+    
+    /*Requisitos*/
+    
+    
+    .container{max-width: 1140px;
+    display: flex;
+    text-align: center;
+    padding: 40px 0;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    box-sizing: border-box;
+    }
+    
+    .requisitos__adopt__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color:$color-primary;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+    }
+    
+    
+    .requisitos__adopt img {
+        border-radius: 20%;
+        border: 3px solid $color-primary;
+        margin-bottom: 20px;
+        width: 80%;
+        max-height: 30rem;
+        -o-object-fit: cover;
+        object-fit: cover;}
+    
+        .requisitos__adopt__text {
+            text-align: left; }
+    
+            .requisitos__adopt__text__subtitle {
+                font-size: 2rem;
+                font-family: "Oswald", sans-serif;
+                margin-bottom: 20px;
+                color: #333;
+                font-style: italic; }
+    
+    
+        .requisitos__adopt__text__item__number {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        background-color:$color-primary;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;}
+    
+        .requisitos__adopt__text__item__description {
+            font-size: 18px;
+            color: #333;}
+    
+            .requisitos__adopt__text__item {
+                margin-bottom: 20px;}
+    
+    
+    
+    
