@@ -1,6 +1,8 @@
     /*Primera pagina*/
     
 
+
+
     .carousel-inner .carousel-item img {
         min-height: 20rem;
         -o-object-fit: cover;
@@ -145,19 +147,7 @@
     
     /*seccion-grid*/
     
-    [data-aos^=zoom][data-aos^=zoom].aos-animate {
-        opacity: 1;
-        transform: translateZ(0) scale(1);
-    }
-    [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
-        transition-timing-function: ease;
-    }
-    [data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
-        transition-duration: .4s;
-    }
-    [data-aos^=zoom][data-aos^=zoom] {
-        opacity: 0;
-    }
+
     
     .info{
         padding: 0;
@@ -194,13 +184,17 @@
         margin-bottom: 10px;
     }
     
+.box1:hover{  transform: scale(1.5);}
     
     .info .box1 {
         grid-area: a;
+
         background-position: center 25%;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100ed…);
+        &:hover {transform: scale(1.2);
+            transition: transform 0.3s, box-shadow 0.3s;}
     }
     
     .info .box2 {
@@ -210,6 +204,9 @@
         background-size: cover;
         background-image: url(https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b6…);
         height: 100%;
+        &:hover {transform: scale(1.1);
+            transition: transform 0.3s, box-shadow 0.3s;}
+
     }
     
     .info .box3 {
@@ -217,6 +214,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        &:hover {transform: scale(1.2);
+        transition: transform 0.3s, box-shadow 0.3s;}
         background-image: url(https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c212…);
     }
     
@@ -225,6 +224,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        &:hover {transform: scale(1.2);
+            transition: transform 0.3s, box-shadow 0.3s;}
         background-image: url(https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e…);
     }
     

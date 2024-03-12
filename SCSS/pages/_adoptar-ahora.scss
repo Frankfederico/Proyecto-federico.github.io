@@ -1,32 +1,6 @@
     /*segunda-pagina*/
-    @media (min-width: 1400px)
-   { .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1320px;
-    }}
 
-    @media (min-width: 1200px)
-{.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1140px;
-}}
 
-@media (min-width: 992px)
-{.container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-}}
-
-@media (min-width: 768px)
-{.container, .container-md, .container-sm {
-    max-width: 720px;
-}}
-
-@media (min-width: 576px)
-{.container, .container-sm {
-    max-width: 540px;
-}}
-@media (max-width: 1317px)
-{.adopt__text {
-    display: none;
-}}
 .adopt__text {
     position: absolute;
     top: 50%;
@@ -88,7 +62,7 @@ max-height: 70px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    &:hover {transform: scale(1.1);}
 }
 
 .cards__list {
@@ -110,23 +84,14 @@ max-height: 70px;
     margin-top: 1rem!important;
     margin-bottom: 1rem!important;
 }
-@media (min-width: 768px)
-{.col-md-4 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
 
-}}
-@media (min-width: 576px)
-{.col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}}
 .cards .card {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     text-align: center;
+    &:hover {transform: scale(1.1);}
 }
 
 
@@ -161,5 +126,46 @@ max-height: 70px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    &:hover {transform: scale(1.1);}
 } 
+
+.adopt__info {
+    background-image: url(https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a033…);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.col {
+    flex: 1 0 0%;
+}
+.adopt__info__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.adopt__info_parrafo {
+    max-width: 80%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}

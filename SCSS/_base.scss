@@ -5,6 +5,7 @@
     
     }
 
+
     $color-primary: #51bedb;
     $color-secundary:#51bedb;
     
@@ -45,25 +46,4 @@
         .link-footer{text-decoration: none;
             color: #f7f7f7;
         } 
-        
-        @media  (min-width: 768px) 
-        {.container, .container-md, .container-sm {
-            max-width: 720px;
-        } }
-        @media (min-width: 576px)
-        {.container, .container-sm {
-            max-width: 540px;
-        } }
-        
-        @media (min-width: 992px)
-        {.container, .container-lg, .container-md, .container-sm {
-            max-width: 960px;
-        } }
-        @media screen and (max-width: 475px)
-        {.info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 85%;
-        } }
         

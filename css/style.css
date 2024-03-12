@@ -6,33 +6,52 @@
   font-family: "Cabin", sans-serif;
 }
 
-.fs-5 {
-  font-size: 1.25rem !important;
+/*FOOTER*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0;
+  justify-content: space-around;
+  display: flex;
 }
 
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Cabin", sans-serif;
+.footer-p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.body {
-  background-color: #e3f2f7;
+.footer-input {
+  width: 50%;
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
 }
 
-/*navbar*/
+.footer-button {
+  background-color: #51bedb;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
 .logo {
   width: 50;
   height: 50;
@@ -74,7 +93,9 @@
   text-decoration: none;
   background: 0 0;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.1);
 }
 
 .bg-light {
@@ -82,7 +103,26 @@
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-/*carrusel*/
+.fs-5 {
+  font-size: 1.25rem !important;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.body {
+  background-color: #e3f2f7;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+/*Primera pagina*/
 .carousel-inner .carousel-item img {
   min-height: 20rem;
   -o-object-fit: cover;
@@ -258,29 +298,6 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-  }
-}
-@media screen and (max-width: 475px) {
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-  }
-}
 .info .box {
   min-height: 15rem;
   padding: 20px;
@@ -304,12 +321,20 @@
   margin-bottom: 10px;
 }
 
+.box1:hover {
+  transform: scale(1.5);
+}
+
 .info .box1 {
   grid-area: a;
   background-position: center 25%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100ed…);
+}
+.info .box1:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .info .box2 {
@@ -320,6 +345,10 @@
   background-image: url(https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b6…);
   height: 100%;
 }
+.info .box2:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
 .info .box3 {
   grid-area: c;
@@ -328,6 +357,10 @@
   background-size: cover;
   background-image: url(https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c212…);
 }
+.info .box3:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
 .info .box4 {
   grid-area: d;
@@ -335,6 +368,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e…);
+}
+.info .box4:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /*Requisitos*/
@@ -404,83 +441,7 @@
   margin-bottom: 20px;
 }
 
-/*FOOTER*/
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 60px 0;
-  justify-content: space-around;
-  display: flex;
-}
-
-.footer-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.footer-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.footer-input {
-  width: 50%;
-  flex-grow: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  font-size: 16px;
-}
-
-.footer-button {
-  background-color: #51bedb;
-  color: #fff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  padding: 10px 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.link-footer {
-  text-decoration: none;
-  color: #f7f7f7;
-}
-
 /*segunda-pagina*/
-@media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1320px;
-  }
-}
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-  }
-}
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
-@media (max-width: 1317px) {
-  .adopt__text {
-    display: none;
-  }
-}
 .adopt__text {
   position: absolute;
   top: 50%;
@@ -545,7 +506,9 @@ footer {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+}
+.find-friend-button:hover {
+  transform: scale(1.1);
 }
 
 .cards__list {
@@ -569,24 +532,15 @@ footer {
   margin-bottom: 1rem !important;
 }
 
-@media (min-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-  }
-}
-@media (min-width: 576px) {
-  .col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-}
 .cards .card {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   text-align: center;
+}
+.cards .card:hover {
+  transform: scale(1.1);
 }
 
 .cards .card__img {
@@ -622,7 +576,53 @@ footer {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+}
+.cards .card__info__button:hover {
+  transform: scale(1.1);
+}
+
+.adopt__info {
+  background-image: url(https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a033…);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.adopt__info__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.adopt__info_parrafo {
+  max-width: 80%;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /*Tercera pagina*/
@@ -686,26 +686,6 @@ img, svg {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-  }
-}
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
 /*Cuarta pagina*/
 .titulo-contacto {
   color: #038803;
