@@ -169,3 +169,8 @@ max-height: 70px;
     margin: 0 auto;
     margin-top: 20px;
 }
+
+@media (max-width:1024px ) {.media-titulo{ display: none;}}
+
+@media (max-width:835px) {.media-parrafo {display: none;}}
+

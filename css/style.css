@@ -625,6 +625,16 @@ footer {
   margin-top: 20px;
 }
 
+@media (max-width: 1024px) {
+  .media-titulo {
+    display: none;
+  }
+}
+@media (max-width: 835px) {
+  .media-parrafo {
+    display: none;
+  }
+}
 /*Tercera pagina*/
 .title-gallery {
   font-size: 3rem;
@@ -687,168 +697,141 @@ img, svg {
 }
 
 /*Cuarta pagina*/
-.titulo-contacto {
-  color: #038803;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-style: oblique;
+.contact__title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #51bedb;
+  padding: 6%;
+}
+
+.contacto-subtitulo {
+  color: #1570BE;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contacto-texto {
+  font-size: 18px;
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+}
+
+.contacto-info {
+  font-size: 18px;
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+}
+
+.mapa {
+  justify-content: left;
+}
+
+.mensaje-titulo {
+  color: #1570BE;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
 
-.contacto-subtitulo {
-  color: #038803;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
-  font-style: oblique;
-  font-weight: bold;
-  text-align: left;
-}
-
-.contacto-text {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.contacto-info {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.mensaje-titulo {
-  color: #038803;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
-  font-style: oblique;
-  font-weight: bold;
-  text-align: left;
-}
-
-.input-mensaje {
-  width: 50%;
-  flex-grow: 1;
-  padding: 10px;
-  border-radius: 5px 0 0 5px;
-  font-size: 16px;
-  margin: 10px;
-  border: 1px solid #ccc;
-}
-
 .enviar-mensaje {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: #51bedb;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
-  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
 }
 
 /*quinta pagina*/
 .donaciones-titulo {
-  color: #038803;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
-  font-style: oblique;
-  font-weight: bold;
   text-align: center;
-  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #51bedb;
+  padding: 6%;
 }
 
 .donaciones-texto {
-  font-size: 1rem;
+  font-size: 18px;
   color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
 }
 
-.donaciones-imagen {
-  width: 40%;
-  height: 40%;
+.donaciones__image {
+  width: 80%;
+  height: 96%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-left: 20%;
+  background-color: #add046;
 }
 
-.donaciones-boton {
+.donaciones__form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.donaciones__form {
+  height: 96%;
+  width: 80%;
+  padding: 20px;
+  background-color: #add046;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donaciones__form__row {
+  margin-bottom: 15px;
+}
+
+.donaciones__form__select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.donaciones__form__button {
   background-color: #51bedb;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
+  border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.cantidad {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
+@media (max-width: 900px) {
+  .donaciones__image {
+    display: none;
+  }
 }
-
-.cardnumber {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.cardholder {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.tarjeta-vencimiento {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.cvv {
-  font-size: 1rem;
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.donaciones-cantidad {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 10px;
-}
-
-.donaciones-tarjeta {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 10px;
-}
-
-.donaciones-titular {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 10px;
-}
-
-.vencimiento-fecha {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 10px;
-}
-
-.input-cvv {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 10px;
+@media (max-width: 900px) {
+  .media-prueba {
+    padding-left: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

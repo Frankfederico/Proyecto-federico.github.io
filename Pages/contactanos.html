@@ -41,35 +41,54 @@
 <main>
 
 
-    <div><h2 class="titulo-contacto">Contactanos</h2></div>
 
 
-    <div>
-     <div><h3 class="contacto-subtitulo">Informacion de contacto</h3>
-     <p class="contacto-text">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte</p>
-     <p class="contacto-info">Correo electronico: Unhogarparaunamigo_@hotmail.com</p>
-     <p class="contacto-info" >Telefono:</p>
-     <p class="contacto-info">Direccion: Mascomundo Dr. Enrique Eizaguirre San Justo</p>
-     <p class="contacto-info" >Horario de atencion: lun-vie, 9:00AM - 5:00PM</p>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.9537033853435!2d-58.559706196137824!3d-34.6822210869764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc71c8c30cf63%3A0x472e0db536420e13!2sMascomundo!5e0!3m2!1ses-419!2sar!4v1705854841599!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 
-    <div class="mensaje">
-        <form action="">
-         <h3 class="mensaje-titulo" >Envianos tu mensaje</h3>
-         <div><label for="Name">nombre</label>
-            <input class="input-mensaje" type="Nombre"></div>
-         <div><label for="correo">Correo electronico</label>
-            <input   class="input-mensaje" type="Correo"></div>
-         <div><label for="asunto">Asunto</label>
-            <input   class="input-mensaje" type="asunto"></div>
-         <div><label for="mensaje">Mensaje</label> 
-            <input   class="input-mensaje" type="mensaje"></div>
-        <div><button type="submit" class="enviar-mensaje" > Enviar mensaje</button></div>
-        </form>
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact__title aos-init aos-animate" data-aos="fade-down-right">CONTACTANOS</h2>
+            <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+                <div class="col-md-6 my-5">
+                    <h3 class="contacto-subtitulo">Información de Contacto</h3>
+                    <p class="contacto-texto">
+                        Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.
+                        Estamos aquí para ayudarte.
+                    </p>
+                    <p class="contacto-info"><i class="fas fa-envelope"></i> Correo electrónico:
+                        Unhogarparaunamigo_@hotmail.com</p>
+                    <p class="contacto-info"><i class="fas fa-phone"></i> Teléfono: +3815644789</p>
+                    <p class="contacto-info"><i class="fas fa-map-marker-alt"></i> Dirección: Mascomundo Dr. Enrique Eizaguirre San Justo</p>
+                    <p class="contacto-info"><i class="fas fa-clock"></i> Horario de Atención: lun-vie, 9:00AM - 5:00PM</p>
 
-</div>
-
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.025399678486!2d-58.56788724660874!3d-34.67962894407577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ef19b8622d%3A0x1bf29ac0447d8e16!2sPlaneta%20Mascota%20San%20Justo!5e0!3m2!1ses-419!2sar!4v1711288679333!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 my-5">
+                    <form>
+                        <h3 class="mensaje-titulo">Envíanos un Mensaje</h3>
+                        <div class="mb-3">
+                            <label for="name" class="form-label lineal">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required=""></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="enviar-mensaje">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </section>
 

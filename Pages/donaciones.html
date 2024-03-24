@@ -38,53 +38,51 @@
         </div>
     </nav>
 <main>
-<section>
- <h1 class="donaciones-titulo">Contribuye a la causa</h1>
-<p class="donaciones-texto" >Tu generosa donación nos ayuda a seguir brindando cuidado y apoyo a los animales necesitados. Cada contribución cuenta y marca la diferencia en la vida de un amigo peludo.</p>
 
-<div>
-    <div>
-        <img  class="donaciones-imagen" src="../img/adoptar-mascota_114360-2019.jpg" alt="">
-    </div>
-
-<div>
-    <form>
-        <label for="amount" class="cantidad" >selecciona una cantidad</label>
-        <select name="amount" id="amount" class="donaciones-cantidad">
-            <option value="disabled selected" required >selecciona una cantidad</option>
-            <option value="100">$100</option>
-            <option value="500">$500</option>
-            <option value="1000">$1000</option>
-            <option value="5000">$5000</option>
-        </select>
-    </form>
-</div>
-
-<div>
-    <label for="cardnumber" class="cardnumber">Numero de Tarjeta</label>
-    <input type="number" class="donaciones-tarjeta" required></div>
-</div>
-
-<div>
-    <label for="cardholder" class="cardholder">Titular de la Tarjeta</label>
-    <input type="text" class="donaciones-titular" required>
-</div>
-
-<div>
-    <label for="expiration" class="tarjeta-vencimiento">Fecha de Vencimiento</label>
-    <input type="number" class="vencimiento-fecha" id="expiration" required>
-</div>
-<div>
-    <label for="cvv" class="cvv">CVV</label>
-    <input type="number" class="input-cvv" id="cvv" required>
-</div>
-<button type="submit" class="donaciones-boton" > Donar Ahora</button>
-
-
-
-</section>
-
-
+    <section class="donaciones mt-5">
+        <h1 class="donaciones-titulo">Contribuye a la causa</h1>
+        <p class="donaciones-texto">Tu generosa donación nos ayuda a seguir brindando cuidado y apoyo a
+            los animales
+            necesitados. Cada contribución cuenta y marca la diferencia en la vida de un amigo peludo.</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-adoptar-mascota_114360-2019.jpg?w=826&amp;t=st=1692296227~exp=1692296827~hmac=5bd97cb673188ac0260bb1fc77f46b7e69a45507dee75ba150fd2ea716b31fc8" alt="ilustracion de personas con mascotas" class="donaciones__image">
+            </div>
+            <div class="col-md-6 media-prueba">
+                <form class="donaciones__form" autocomplete="off">
+                    <div class="donaciones__form__row">
+                        <label for="amount" class="form-label">Selecciona la Cantidad</label>
+                        <select class="donaciones__form__select" id="amount" name="amount" required="">
+                            <option value="" disabled="" selected="">Selecciona una cantidad</option>
+                            <option value="100">$100</option>
+                            <option value="500">$500</option>
+                            <option value="1000">$1000</option>
+                            <option value="5000">$5000</option>
+                        </select>
+                    </div>
+                    <div class="donaciones__form__row">
+                        <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                        <input type="number" class="donaciones__form__input" id="cardNumber" name="cardNumber" required="">
+                    </div>
+                    <div class="donaciones__form__row">
+                        <label for="cardHolder" class="form-label">Titular de la Tarjeta</label>
+                        <input type="text" class="donaciones__form__input" id="cardHolder" name="cardHolder" required="">
+                    </div>
+                    <div class="donaciones__form__row">
+                        <div class="col-md-6">
+                            <label for="expiration" class="form-label">Fecha de Vencimiento</label>
+                            <input type="number" class="donaciones__form__input" id="expiration" name="expiration" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="number" class="donaciones__form__input" id="cvv" name="cvv" required="">
+                        </div>
+                    </div>
+                    <button type="submit" class="donaciones__form__button">Donar Ahora <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- seccion-footer-->
